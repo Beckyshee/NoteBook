@@ -4,7 +4,7 @@ exports.addNote = exports.updateNoteController = exports.addNoteController = exp
 const noteServices_1 = require("../services/noteServices");
 Object.defineProperty(exports, "addNote", { enumerable: true, get: function () { return noteServices_1.addNote; } });
 function appTest(req, res) {
-    return res.send("Test okay");
+    return res.send("test good to go");
 }
 exports.appTest = appTest;
 function getAllNotesController(req, res) {

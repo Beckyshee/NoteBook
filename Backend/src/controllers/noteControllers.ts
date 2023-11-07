@@ -7,7 +7,7 @@ import { addNote,
 
 
 export function appTest(req:Request, res:Response){
-      return res.send("Test okay")
+      return res.send("test good to go")
 }
 
 export function getAllNotesController(req: Request, res:Response){
