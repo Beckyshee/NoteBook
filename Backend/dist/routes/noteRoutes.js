@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const noteControllers_1 = require("../controllers/noteControllers");
+const noterouter = (0, express_1.Router)();
+noterouter.get('/', noteControllers_1.appTest);
+noterouter.get("/", noteControllers_1.getAllNotesController);
+noterouter.get('/:noteID', noteControllers_1.getSpecificNoteController);
+noterouter.delete("/:noteID", noteControllers_1.deleteNoteController);
+noterouter.post("/", noteControllers_1.addNote);
+noterouter.put("/:noteID", noteControllers_1.updateNoteController);
+exports.default = noterouter;
